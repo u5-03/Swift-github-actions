@@ -144,6 +144,8 @@
 			dependencies = (
 			);
 			name = "Swift-github-actions";
+			packageProductDependencies = (
+			);
 			productName = "Swift-github-actions";
 			productReference = 3289B51423D351D1006DDB96 /* Swift-github-actions.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +218,8 @@
 				Base,
 			);
 			mainGroup = 3289B50B23D351D1006DDB96;
+			packageReferences = (
+			);
 			productRefGroup = 3289B51523D351D1006DDB96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

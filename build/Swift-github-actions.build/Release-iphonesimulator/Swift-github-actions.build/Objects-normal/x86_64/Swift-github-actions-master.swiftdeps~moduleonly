@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "ef6de4e3e7863b3e9ec28f723eb038a6"
+build_time: [1579365538, 670039000]
+inputs:
+  "/Users/yugos-ava/Dev/Swift/Test/Swift-github-actions/Swift-github-actions/ViewController.swift": [9223372036, 854775807]
+  "/Users/yugos-ava/Dev/Swift/Test/Swift-github-actions/Swift-github-actions/AppDelegate.swift": [9223372036, 854775807]
+  "/Users/yugos-ava/Dev/Swift/Test/Swift-github-actions/Swift-github-actions/SceneDelegate.swift": [9223372036, 854775807]
