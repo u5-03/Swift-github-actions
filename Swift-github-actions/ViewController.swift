@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift-github-actions
 //
-//  Created by Yugos-Ava on 2020/01/18.
+//  Created by yugo.sugiyama on 2020/01/18.
 //  Copyright © 2020 yugo.sugiyama. All rights reserved.
 //
 
