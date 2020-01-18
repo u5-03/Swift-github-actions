@@ -18,6 +18,8 @@ jobs:
     - name: Build
       run: xcodebuild
             -sdk iphonesimulator
+            -configuration Debug
+            -scheme Swift-github-actions
             build
       # Run unit test
     - name: Run tests
