@@ -14,6 +14,16 @@ jobs:
       run: sudo xcode-select -s '/Applications/Xcode_11.3.app/Contents/Developer'
     - name: Show Xcode version
       run: xcodebuild -version
+    # Install mint
+    - name: Install mint
+      run: brew install mint
+    - name: Cache Mint package
+      uses: actions/cache@v1
+      with:
+            path: /usr/local/lib/mint
+            key: ${{ runner.os }}-mint-${{ hashFiles('**/Mintfile') }}
+            restore-keys: |
+              ${{ runner.os }}-mint-
       # Run build
     - name: Build
       run: xcodebuild

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326076AC23D52BC400D82B67 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 326076AB23D52BC400D82B67 /* Rswift */; };
+		326076AE23D52C3300D82B67 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326076AD23D52C3300D82B67 /* R.generated.swift */; };
 		3289B51823D351D1006DDB96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289B51723D351D1006DDB96 /* AppDelegate.swift */; };
 		3289B51A23D351D1006DDB96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289B51923D351D1006DDB96 /* SceneDelegate.swift */; };
 		3289B51C23D351D1006DDB96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3289B51B23D351D1006DDB96 /* ViewController.swift */; };
@@ -18,6 +20,7 @@
 		32D9A5FD23D36D9F00C1344C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 32D9A5FC23D36D9F00C1344C /* RxRelay */; };
 		32D9A5FF23D36D9F00C1344C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32D9A5FE23D36D9F00C1344C /* RxSwift */; };
 		32D9A60123D36D9F00C1344C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 32D9A60023D36D9F00C1344C /* RxCocoa */; };
+		32D9A60323D5274E00C1344C /* Mintfile in Resources */ = {isa = PBXBuildFile; fileRef = 32D9A60223D5274E00C1344C /* Mintfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		326076AD23D52C3300D82B67 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		3289B51423D351D1006DDB96 /* Swift-github-actions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-github-actions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3289B51723D351D1006DDB96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3289B51923D351D1006DDB96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		3289B53523D351D4006DDB96 /* Swift-github-actionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-github-actionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3289B53923D351D4006DDB96 /* Swift_github_actionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_github_actionsUITests.swift; sourceTree = "<group>"; };
 		3289B53B23D351D4006DDB96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D9A60223D5274E00C1344C /* Mintfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D9A60123D36D9F00C1344C /* RxCocoa in Frameworks */,
+				326076AC23D52BC400D82B67 /* Rswift in Frameworks */,
 				32D9A5FF23D36D9F00C1344C /* RxSwift in Frameworks */,
 				32D9A5FD23D36D9F00C1344C /* RxRelay in Frameworks */,
 			);
@@ -89,6 +95,7 @@
 				3289B52D23D351D4006DDB96 /* Swift-github-actionsTests */,
 				3289B53823D351D4006DDB96 /* Swift-github-actionsUITests */,
 				3289B51523D351D1006DDB96 /* Products */,
+				32D9A60223D5274E00C1344C /* Mintfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,7 @@
 		3289B51623D351D1006DDB96 /* Swift-github-actions */ = {
 			isa = PBXGroup;
 			children = (
+				32D9A61823D5284F00C1344C /* Generated */,
 				3289B51723D351D1006DDB96 /* AppDelegate.swift */,
 				3289B51923D351D1006DDB96 /* SceneDelegate.swift */,
 				3289B51B23D351D1006DDB96 /* ViewController.swift */,
@@ -134,6 +142,14 @@
 			path = "Swift-github-actionsUITests";
 			sourceTree = "<group>";
 		};
+		32D9A61823D5284F00C1344C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				326076AD23D52C3300D82B67 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +157,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3289B53E23D351D4006DDB96 /* Build configuration list for PBXNativeTarget "Swift-github-actions" */;
 			buildPhases = (
+				32D9A61723D527FF00C1344C /* Run Rswift */,
 				3289B51023D351D1006DDB96 /* Sources */,
 				3289B51123D351D1006DDB96 /* Frameworks */,
 				3289B51223D351D1006DDB96 /* Resources */,
@@ -154,6 +171,7 @@
 				32D9A5FC23D36D9F00C1344C /* RxRelay */,
 				32D9A5FE23D36D9F00C1344C /* RxSwift */,
 				32D9A60023D36D9F00C1344C /* RxCocoa */,
+				326076AB23D52BC400D82B67 /* Rswift */,
 			);
 			productName = "Swift-github-actions";
 			productReference = 3289B51423D351D1006DDB96 /* Swift-github-actions.app */;
@@ -229,6 +247,7 @@
 			mainGroup = 3289B50B23D351D1006DDB96;
 			packageReferences = (
 				32D9A5FB23D36D9F00C1344C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				326076AA23D52BC400D82B67 /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 3289B51523D351D1006DDB96 /* Products */;
 			projectDirPath = "";
@@ -246,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D9A60323D5274E00C1344C /* Mintfile in Resources */,
 				3289B52423D351D4006DDB96 /* LaunchScreen.storyboard in Resources */,
 				3289B52123D351D4006DDB96 /* Assets.xcassets in Resources */,
 				3289B51F23D351D1006DDB96 /* Main.storyboard in Resources */,
@@ -268,6 +288,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32D9A61723D527FF00C1344C /* Run Rswift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Run Rswift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/Swift-github-actions/Generated/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif mint list | grep -q 'R.swift'; then\n  mint run R.swift rswift generate \"$SRCROOT/Swift-github-actions/Generated/R.generated.swift\"\nelse\n  echo \"error: R.swift not installed; run 'mint bootstrap' to install\"\n  return -1\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3289B51023D351D1006DDB96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -276,6 +319,7 @@
 				3289B51C23D351D1006DDB96 /* ViewController.swift in Sources */,
 				3289B51823D351D1006DDB96 /* AppDelegate.swift in Sources */,
 				3289B51A23D351D1006DDB96 /* SceneDelegate.swift in Sources */,
+				326076AE23D52C3300D82B67 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +650,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		326076AA23D52BC400D82B67 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 		32D9A5FB23D36D9F00C1344C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
@@ -617,6 +669,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		326076AB23D52BC400D82B67 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 326076AA23D52BC400D82B67 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
 		32D9A5FC23D36D9F00C1344C /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 32D9A5FB23D36D9F00C1344C /* XCRemoteSwiftPackageReference "RxSwift" */;

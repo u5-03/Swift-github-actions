@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let storyboard = R.storyboard.main().instantiateInitialViewController()
         // Do any additional setup after loading the view.
     }
 
