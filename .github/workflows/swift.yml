@@ -24,14 +24,22 @@ jobs:
             key: ${{ runner.os }}-mint-${{ hashFiles('**/Mintfile') }}
             restore-keys: |
               ${{ runner.os }}-mint-
-      # Run build
+    # Cache Carthage packages
+    - name: Cache Carthage packages
+      uses: actions/cache@v1
+      with:
+            path: Carthage
+            key: ${{ runner.os }}-carthage-${{ hashFiles('**/Cartfile.resolved') }}
+            restore-keys: |
+              ${{ runner.os }}-carthage-
+    # Run build
     - name: Build
       run: xcodebuild
             -sdk iphonesimulator
             -configuration Debug
             -scheme Swift-github-actions
             build
-      # Run unit test
+    # Run unit test
     - name: Run tests
       run: xcodebuild
             -scheme Swift-github-actions
